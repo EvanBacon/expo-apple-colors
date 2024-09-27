@@ -47,5 +47,6 @@ function App() {
 
 <img width="531" alt="Screenshot 2024-09-27 at 7 10 44 PM" src="https://github.com/user-attachments/assets/9d76866c-93d0-4538-b2d8-35c5c5004a35">
 
+## Issue with Android
 
-
+While this technically works and is setup correctly on Android, the PlatformColor API in React Native [has a bug](https://github.com/facebook/react-native/issues/32823) that makes it not update at runtime. This means the first time a component is mounted with the color, it will be the correct color, but if the appearance changes at runtime, it will not update. This is a limitation of React Native and not this package.
