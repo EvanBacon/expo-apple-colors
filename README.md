@@ -42,3 +42,10 @@ function App() {
   );
 }
 ```
+
+## Colors
+
+<img width="531" alt="Screenshot 2024-09-27 at 7 10 44 PM" src="https://github.com/user-attachments/assets/9d76866c-93d0-4538-b2d8-35c5c5004a35">
+
+
+
