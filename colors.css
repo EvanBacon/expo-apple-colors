@@ -1,0 +1,162 @@
+
+:root {
+  --apple-systemBlue: rgba(0, 122.4, 255, 1);
+  --apple-systemBrown: rgba(163.2, 132.6, 94.8, 1);
+  --apple-systemGreen: rgba(51, 199.8, 89.25, 1);
+  --apple-systemIndigo: rgba(89.25, 86.7, 214.2, 1);
+  --apple-systemOrange: rgba(255, 147.9, 0, 1);
+  --apple-systemPink: rgba(255, 45.9, 84.15, 1);
+  --apple-systemPurple: rgba(176.1, 81.6, 222.3, 1);
+  --apple-systemRed: rgba(255, 58.65, 48.45, 1);
+  --apple-systemTeal: rgba(48.45, 176.1, 199.8, 1);
+  --apple-systemYellow: rgba(255, 204, 0, 1);
+  --apple-systemGray: rgba(142.8, 142.8, 147.9, 1);
+  --apple-systemGray2: rgba(173.4, 173.4, 179.55, 1);
+  --apple-systemGray3: rgba(198.9, 198.9, 204, 1);
+  --apple-systemGray4: rgba(209.1, 209.1, 214.2, 1);
+  --apple-systemGray5: rgba(229.5, 229.5, 234.6, 1);
+  --apple-systemGray6: rgba(242.25, 242.25, 247.35, 1);
+  --apple-label: rgba(0, 0, 0, 1);
+  --apple-secondaryLabel: rgba(61.2, 61.2, 66, 0.6);
+  --apple-tertiaryLabel: rgba(61.2, 61.2, 66, 0.3);
+  --apple-quaternaryLabel: rgba(61.2, 61.2, 66, 0.18);
+  --apple-systemFill: rgba(119.85, 119.85, 127.5, 0.2);
+  --apple-secondarySystemFill: rgba(119.85, 119.85, 127.5, 0.16);
+  --apple-tertiarySystemFill: rgba(117.3, 117.3, 127.5, 0.12);
+  --apple-quaternarySystemFill: rgba(114.75, 114.75, 127.5, 0.08);
+  --apple-placeholderText: rgba(61.2, 61.2, 66, 0.3);
+  --apple-systemBackground: rgba(255, 255, 255, 1);
+  --apple-secondarySystemBackground: rgba(242.25, 242.25, 247.35, 1);
+  --apple-tertiarySystemBackground: rgba(255, 255, 255, 1);
+  --apple-systemGroupedBackground: rgba(242.25, 242.25, 247.35, 1);
+  --apple-secondarySystemGroupedBackground: rgba(255, 255, 255, 1);
+  --apple-tertiarySystemGroupedBackground: rgba(242.25, 242.25, 247.35, 1);
+  --apple-separator: rgba(61.2, 61.2, 66, 0.29);
+  --apple-opaqueSeparator: rgba(198.9, 198.9, 198.9, 1);
+  --apple-link: rgba(0, 122.4, 255, 1);
+  --apple-darkText: rgba(0, 0, 0, 1);
+  --apple-lightText: rgba(255, 255, 255, 0.6);
+}
+@media (color-gamut: p3) {
+    :root {
+                --apple-systemBlue: color(display-p3 0 0.48 1);
+        --apple-systemBrown: color(display-p3 0.64 0.52 0.37);
+        --apple-systemGreen: color(display-p3 0.2 0.78 0.35);
+        --apple-systemIndigo: color(display-p3 0.35 0.34 0.84);
+        --apple-systemOrange: color(display-p3 1 0.58 0);
+        --apple-systemPink: color(display-p3 1 0.18 0.33);
+        --apple-systemPurple: color(display-p3 0.69 0.32 0.87);
+        --apple-systemRed: color(display-p3 1 0.23 0.19);
+        --apple-systemTeal: color(display-p3 0.19 0.69 0.78);
+        --apple-systemYellow: color(display-p3 1 0.8 0);
+        --apple-systemGray: color(display-p3 0.56 0.56 0.58);
+        --apple-systemGray2: color(display-p3 0.68 0.68 0.7);
+        --apple-systemGray3: color(display-p3 0.78 0.78 0.8);
+        --apple-systemGray4: color(display-p3 0.82 0.82 0.84);
+        --apple-systemGray5: color(display-p3 0.9 0.9 0.92);
+        --apple-systemGray6: color(display-p3 0.95 0.95 0.97);
+        --apple-label: color(display-p3 0 0 0);
+        --apple-secondaryLabel: color(display-p3 0.24 0.24 0.26 / 0.6);
+        --apple-tertiaryLabel: color(display-p3 0.24 0.24 0.26 / 0.3);
+        --apple-quaternaryLabel: color(display-p3 0.24 0.24 0.26 / 0.18);
+        --apple-systemFill: color(display-p3 0.47 0.47 0.5 / 0.2);
+        --apple-secondarySystemFill: color(display-p3 0.47 0.47 0.5 / 0.16);
+        --apple-tertiarySystemFill: color(display-p3 0.46 0.46 0.5 / 0.12);
+        --apple-quaternarySystemFill: color(display-p3 0.45 0.45 0.5 / 0.08);
+        --apple-placeholderText: color(display-p3 0.24 0.24 0.26 / 0.3);
+        --apple-systemBackground: color(display-p3 1 1 1);
+        --apple-secondarySystemBackground: color(display-p3 0.95 0.95 0.97);
+        --apple-tertiarySystemBackground: color(display-p3 1 1 1);
+        --apple-systemGroupedBackground: color(display-p3 0.95 0.95 0.97);
+        --apple-secondarySystemGroupedBackground: color(display-p3 1 1 1);
+        --apple-tertiarySystemGroupedBackground: color(display-p3 0.95 0.95 0.97);
+        --apple-separator: color(display-p3 0.24 0.24 0.26 / 0.29);
+        --apple-opaqueSeparator: color(display-p3 0.78 0.78 0.78);
+        --apple-link: color(display-p3 0 0.48 1);
+        --apple-darkText: color(display-p3 0 0 0);
+        --apple-lightText: color(display-p3 1 1 1 / 0.6);
+
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+            --apple-systemBlue: rgba(10.2, 132.6, 255, 1);
+        --apple-systemBrown: rgba(170.85, 142.8, 104.55, 1);
+        --apple-systemGreen: rgba(48.45, 209.1, 89.25, 1);
+        --apple-systemIndigo: rgba(94.35, 91.8, 229.5, 1);
+        --apple-systemOrange: rgba(255, 158.1, 10.2, 1);
+        --apple-systemPink: rgba(255, 56.1, 94.35, 1);
+        --apple-systemPurple: rgba(191.25, 89.25, 242.25, 1);
+        --apple-systemRed: rgba(255, 69.3, 58.65, 1);
+        --apple-systemTeal: rgba(63.75, 199.8, 224.4, 1);
+        --apple-systemYellow: rgba(255, 214.2, 10.2, 1);
+        --apple-systemGray: rgba(142.8, 142.8, 147.9, 1);
+        --apple-systemGray2: rgba(99.45, 99.45, 102.0, 1);
+        --apple-systemGray3: rgba(71.4, 71.4, 73.95, 1);
+        --apple-systemGray4: rgba(58.65, 58.65, 61.2, 1);
+        --apple-systemGray5: rgba(43.35, 43.35, 46.35, 1);
+        --apple-systemGray6: rgba(28.05, 28.05, 30.6, 1);
+        --apple-label: rgba(255, 255, 255, 1);
+        --apple-secondaryLabel: rgba(234.6, 234.6, 244.8, 0.6);
+        --apple-tertiaryLabel: rgba(234.6, 234.6, 244.8, 0.3);
+        --apple-quaternaryLabel: rgba(234.6, 234.6, 244.8, 0.16);
+        --apple-systemFill: rgba(119.85, 119.85, 127.5, 0.36);
+        --apple-secondarySystemFill: rgba(119.85, 119.85, 127.5, 0.32);
+        --apple-tertiarySystemFill: rgba(117.3, 117.3, 127.5, 0.24);
+        --apple-quaternarySystemFill: rgba(117.3, 117.3, 127.5, 0.18);
+        --apple-placeholderText: rgba(234.6, 234.6, 244.8, 0.3);
+        --apple-systemBackground: rgba(0, 0, 0, 1);
+        --apple-secondarySystemBackground: rgba(28.05, 28.05, 30.6, 1);
+        --apple-tertiarySystemBackground: rgba(43.35, 43.35, 46.35, 1);
+        --apple-systemGroupedBackground: rgba(0, 0, 0, 1);
+        --apple-secondarySystemGroupedBackground: rgba(28.05, 28.05, 30.6, 1);
+        --apple-tertiarySystemGroupedBackground: rgba(43.35, 43.35, 46.35, 1);
+        --apple-separator: rgba(84.15, 84.15, 89.25, 0.6);
+        --apple-opaqueSeparator: rgba(56.1, 56.1, 58.65, 1);
+        --apple-link: rgba(10.2, 132.6, 255, 1);
+        --apple-darkText: rgba(0, 0, 0, 1);
+        --apple-lightText: rgba(255, 255, 255, 0.6);
+    }
+
+    @media (color-gamut: p3) {
+        :root {
+                        --apple-systemBlue: color(display-p3 0.04 0.52 1);
+            --apple-systemBrown: color(display-p3 0.67 0.56 0.41);
+            --apple-systemGreen: color(display-p3 0.19 0.82 0.35);
+            --apple-systemIndigo: color(display-p3 0.37 0.36 0.9);
+            --apple-systemOrange: color(display-p3 1 0.62 0.04);
+            --apple-systemPink: color(display-p3 1 0.22 0.37);
+            --apple-systemPurple: color(display-p3 0.75 0.35 0.95);
+            --apple-systemRed: color(display-p3 1 0.27 0.23);
+            --apple-systemTeal: color(display-p3 0.25 0.78 0.88);
+            --apple-systemYellow: color(display-p3 1 0.84 0.04);
+            --apple-systemGray: color(display-p3 0.56 0.56 0.58);
+            --apple-systemGray2: color(display-p3 0.39 0.39 0.4);
+            --apple-systemGray3: color(display-p3 0.28 0.28 0.29);
+            --apple-systemGray4: color(display-p3 0.23 0.23 0.24);
+            --apple-systemGray5: color(display-p3 0.17 0.17 0.18);
+            --apple-systemGray6: color(display-p3 0.11 0.11 0.12);
+            --apple-label: color(display-p3 1 1 1);
+            --apple-secondaryLabel: color(display-p3 0.92 0.92 0.96 / 0.6);
+            --apple-tertiaryLabel: color(display-p3 0.92 0.92 0.96 / 0.3);
+            --apple-quaternaryLabel: color(display-p3 0.92 0.92 0.96 / 0.16);
+            --apple-systemFill: color(display-p3 0.47 0.47 0.5 / 0.36);
+            --apple-secondarySystemFill: color(display-p3 0.47 0.47 0.5 / 0.32);
+            --apple-tertiarySystemFill: color(display-p3 0.46 0.46 0.5 / 0.24);
+            --apple-quaternarySystemFill: color(display-p3 0.46 0.46 0.5 / 0.18);
+            --apple-placeholderText: color(display-p3 0.92 0.92 0.96 / 0.3);
+            --apple-systemBackground: color(display-p3 0 0 0);
+            --apple-secondarySystemBackground: color(display-p3 0.11 0.11 0.12);
+            --apple-tertiarySystemBackground: color(display-p3 0.17 0.17 0.18);
+            --apple-systemGroupedBackground: color(display-p3 0 0 0);
+            --apple-secondarySystemGroupedBackground: color(display-p3 0.11 0.11 0.12);
+            --apple-tertiarySystemGroupedBackground: color(display-p3 0.17 0.17 0.18);
+            --apple-separator: color(display-p3 0.33 0.33 0.35 / 0.6);
+            --apple-opaqueSeparator: color(display-p3 0.22 0.22 0.23);
+            --apple-link: color(display-p3 0.04 0.52 1);
+            --apple-darkText: color(display-p3 0 0 0);
+            --apple-lightText: color(display-p3 1 1 1 / 0.6);
+        }
+    }
+}
