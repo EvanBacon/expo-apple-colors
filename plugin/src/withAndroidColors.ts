@@ -23,9 +23,9 @@ function hexFromCssColor(color: string): string {
 import Spec from "../../spec.json";
 
 const colors = Object.fromEntries(
-  Object.entries(Spec.colors).map(([name, { defaultLight, defaultDark }]) => {
+  Spec.colors.map(({ systemName, defaultLight, defaultDark }) => {
     return [
-      name,
+      systemName,
       [
         `rgba(${defaultLight.R}, ${defaultLight.G}, ${defaultLight.B}, ${
           defaultLight.A ?? 1

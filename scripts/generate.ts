@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import { COLORS } from "../plugin/src/apple-colors";
 
 import Spec from "../spec.json";
 
@@ -9,25 +8,43 @@ function twoFiftyFiveTo1(value: number) {
 }
 
 const COLORS_P3 = Object.fromEntries(
-  Spec.colors.map((color) => [
-    color.name,
-    [
-      `color(display-p3 ${twoFiftyFiveTo1(
-        color.defaultLight.R
-      )} ${twoFiftyFiveTo1(color.defaultLight.G)} ${twoFiftyFiveTo1(
-        color.defaultLight.B
-      )}${color.defaultLight.A != null ? ` / ${color.defaultLight.A}` : ""})`,
-      `color(display-p3 ${twoFiftyFiveTo1(
-        color.defaultDark.R
-      )} ${twoFiftyFiveTo1(color.defaultDark.G)} ${twoFiftyFiveTo1(
-        color.defaultDark.B
-      )}${color.defaultDark.A != null ? ` / ${color.defaultDark.A}` : ""})`,
-    ],
-  ])
+  Spec.colors
+    // .sort((a, b) => a.systemName.localeCompare(b.systemName))
+    .map((color) => [
+      color.systemName,
+      [
+        `color(display-p3 ${twoFiftyFiveTo1(
+          color.defaultLight.R
+        )} ${twoFiftyFiveTo1(color.defaultLight.G)} ${twoFiftyFiveTo1(
+          color.defaultLight.B
+        )}${color.defaultLight.A != null ? ` / ${color.defaultLight.A}` : ""})`,
+        `color(display-p3 ${twoFiftyFiveTo1(
+          color.defaultDark.R
+        )} ${twoFiftyFiveTo1(color.defaultDark.G)} ${twoFiftyFiveTo1(
+          color.defaultDark.B
+        )}${color.defaultDark.A != null ? ` / ${color.defaultDark.A}` : ""})`,
+      ],
+    ])
+);
+
+const COLORS = Object.fromEntries(
+  Spec.colors
+    // .sort((a, b) => a.systemName.localeCompare(b.systemName))
+    .map((color) => [
+      color.systemName,
+      [
+        `rgba(${color.defaultLight.R}, ${color.defaultLight.G}, ${
+          color.defaultLight.B
+        }, ${color.defaultLight.A ?? 1})`,
+        `rgba(${color.defaultDark.R}, ${color.defaultDark.G}, ${
+          color.defaultDark.B
+        }, ${color.defaultDark.A ?? 1})`,
+      ],
+    ])
 );
 
 const descriptions = Object.fromEntries(
-  Spec.colors.map((color) => [color.name, color.description])
+  Spec.colors.map((color) => [color.systemName, color.description])
 );
 
 function generateCss() {
@@ -44,34 +61,34 @@ ${Object.entries(COLORS)
 }
 @media (color-gamut: p3) {
     :root {
-        ${Object.entries(COLORS_P3)
-          .map(([key, value]) => {
-            const [light, dark] = value;
-            return `        --apple-${key}: ${light};`;
-          })
-          .join("\n")}
+${Object.entries(COLORS_P3)
+  .map(([key, value]) => {
+    const [light, dark] = value;
+    return `        --apple-${key}: ${light};`;
+  })
+  .join("\n")}
 
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-    ${Object.entries(COLORS)
-      .map(([key, value]) => {
-        const [light, dark] = value;
-        return `        --apple-${key}: ${dark};`;
-      })
-      .join("\n")}
+${Object.entries(COLORS)
+  .map(([key, value]) => {
+    const [light, dark] = value;
+    return `        --apple-${key}: ${dark};`;
+  })
+  .join("\n")}
     }
 
     @media (color-gamut: p3) {
         :root {
-            ${Object.entries(COLORS_P3)
-              .map(([key, value]) => {
-                const [light, dark] = value;
-                return `            --apple-${key}: ${dark};`;
-              })
-              .join("\n")}
+${Object.entries(COLORS_P3)
+  .map(([key, value]) => {
+    const [light, dark] = value;
+    return `            --apple-${key}: ${dark};`;
+  })
+  .join("\n")}
         }
     }
 }
