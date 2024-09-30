@@ -5,8 +5,8 @@ import {
   withAndroidColorsNight,
 } from "@expo/config-plugins";
 
+import Spec from "../../spec.json";
 import { rgbHex } from "./rgb-to-hex";
-
 // Errors on: systemCyan, systemMint, tintColor
 
 const cachedColors = new Map<string, string>();
@@ -19,8 +19,6 @@ function hexFromCssColor(color: string): string {
   cachedColors.set(color, hex);
   return hex;
 }
-
-import Spec from "../../spec.json";
 
 const colors = Object.fromEntries(
   Spec.colors.map(({ systemName, defaultLight, defaultDark }) => {

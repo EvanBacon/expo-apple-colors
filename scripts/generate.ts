@@ -63,7 +63,7 @@ ${Object.entries(COLORS)
     :root {
 ${Object.entries(COLORS_P3)
   .map(([key, value]) => {
-    const [light, dark] = value;
+    const [light] = value;
     return `        --apple-${key}: ${light};`;
   })
   .join("\n")}
@@ -75,7 +75,7 @@ ${Object.entries(COLORS_P3)
     :root {
 ${Object.entries(COLORS)
   .map(([key, value]) => {
-    const [light, dark] = value;
+    const [, dark] = value;
     return `        --apple-${key}: ${dark};`;
   })
   .join("\n")}
@@ -85,7 +85,7 @@ ${Object.entries(COLORS)
         :root {
 ${Object.entries(COLORS_P3)
   .map(([key, value]) => {
-    const [light, dark] = value;
+    const [, dark] = value;
     return `            --apple-${key}: ${dark};`;
   })
   .join("\n")}
