@@ -5,7 +5,6 @@ import {
   withAndroidColorsNight,
 } from "@expo/config-plugins";
 
-import { STANDARD_COLORS, UI_ELEMENT_COLORS } from "./apple-colors.js";
 import { rgbHex } from "./rgb-to-hex";
 
 // Errors on: systemCyan, systemMint, tintColor
@@ -21,16 +20,23 @@ function hexFromCssColor(color: string): string {
   return hex;
 }
 
-const colors = {
-  ...STANDARD_COLORS.reduce((acc, { name, value }) => {
-    acc[name] = value;
-    return acc;
-  }, {} as Record<string, string | string[]>),
-  ...UI_ELEMENT_COLORS.reduce((acc, { name, value }) => {
-    acc[name] = value;
-    return acc;
-  }, {} as Record<string, string | string[]>),
-} as Record<string, string | [string, string]>;
+import Spec from "../../spec.json";
+
+const colors = Object.fromEntries(
+  Object.entries(Spec.colors).map(([name, { defaultLight, defaultDark }]) => {
+    return [
+      name,
+      [
+        `rgba(${defaultLight.R}, ${defaultLight.G}, ${defaultLight.B}, ${
+          defaultLight.A ?? 1
+        })`,
+        `rgba(${defaultDark.R}, ${defaultDark.G}, ${defaultDark.B}, ${
+          defaultDark.A ?? 1
+        })`,
+      ],
+    ];
+  })
+) as Record<string, string | [string, string]>;
 
 const withAppleBuiltInColors: ConfigPlugin = (config) => {
   const dark: Record<string, string> = {};
