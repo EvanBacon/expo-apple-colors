@@ -1,6 +1,6 @@
 {
   "name": "@bacons/apple-colors",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Use native apple colors across all platforms",
   "types": "build/colors.d.ts",
   "main": "build/colors",

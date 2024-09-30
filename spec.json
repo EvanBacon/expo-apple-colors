@@ -34,7 +34,7 @@
       "systemName": "systemGreen",
       "description": "A green color that automatically adapts to the current trait environment.",
       "defaultLight": { "R": 52, "G": 199, "B": 89 },
-      "defaultDark": { "R": 48, "G": 209, "B": 88 },
+      "defaultDark": { "R": 48.45, "G": 209.1, "B": 89.25 },
       "accessibleLight": { "R": 36, "G": 138, "B": 61 },
       "accessibleDark": { "R": 68, "G": 219, "B": 91 }
     },
