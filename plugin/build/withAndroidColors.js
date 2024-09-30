@@ -1,7 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const config_plugins_1 = require("@expo/config-plugins");
-const apple_colors_js_1 = require("./apple-colors.js");
 const rgb_to_hex_1 = require("./rgb-to-hex");
 // Errors on: systemCyan, systemMint, tintColor
 const cachedColors = new Map();
@@ -13,16 +15,16 @@ function hexFromCssColor(color) {
     cachedColors.set(color, hex);
     return hex;
 }
-const colors = {
-    ...apple_colors_js_1.STANDARD_COLORS.reduce((acc, { name, value }) => {
-        acc[name] = value;
-        return acc;
-    }, {}),
-    ...apple_colors_js_1.UI_ELEMENT_COLORS.reduce((acc, { name, value }) => {
-        acc[name] = value;
-        return acc;
-    }, {}),
-};
+const spec_json_1 = __importDefault(require("../../spec.json"));
+const colors = Object.fromEntries(spec_json_1.default.colors.map(({ systemName, defaultLight, defaultDark }) => {
+    return [
+        systemName,
+        [
+            `rgba(${defaultLight.R}, ${defaultLight.G}, ${defaultLight.B}, ${defaultLight.A ?? 1})`,
+            `rgba(${defaultDark.R}, ${defaultDark.G}, ${defaultDark.B}, ${defaultDark.A ?? 1})`,
+        ],
+    ];
+}));
 const withAppleBuiltInColors = (config) => {
     const dark = {};
     const light = Object.entries(colors).reduce((acc, [name, value]) => {

@@ -1,0 +1,310 @@
+{
+  "//": "ChatGPT generated from a screenshot of https://developer.apple.com/design/human-interface-guidelines/color",
+
+  "colors": [
+    {
+      "name": "Blue",
+      "systemName": "systemBlue",
+      "description": "A blue color that automatically adapts to the current trait environment.",
+      "defaultLight": { "R": 0, "G": 122, "B": 255 },
+      "defaultDark": { "R": 10, "G": 132, "B": 255 },
+      "accessibleLight": { "R": 0, "G": 64, "B": 221 },
+      "accessibleDark": { "R": 64, "G": 156, "B": 255 }
+    },
+    {
+      "name": "Brown",
+      "systemName": "systemBrown",
+      "description": "A brown color that automatically adapts to the current trait environment.",
+      "defaultLight": { "R": 162, "G": 132, "B": 94 },
+      "defaultDark": { "R": 172, "G": 142, "B": 104 },
+      "accessibleLight": { "R": 127, "G": 101, "B": 69 },
+      "accessibleDark": { "R": 181, "G": 148, "B": 69 }
+    },
+    {
+      "name": "Cyan",
+      "systemName": "systemCyan",
+      "description": "A cyan color that automatically adapts to the current trait environment.",
+      "defaultLight": { "R": 50, "G": 173, "B": 230 },
+      "defaultDark": { "R": 100, "G": 210, "B": 255 },
+      "accessibleLight": { "R": 0, "G": 113, "B": 164 },
+      "accessibleDark": { "R": 112, "G": 215, "B": 255 }
+    },
+    {
+      "name": "Green",
+      "systemName": "systemGreen",
+      "description": "A green color that automatically adapts to the current trait environment.",
+      "defaultLight": { "R": 52, "G": 199, "B": 89 },
+      "defaultDark": { "R": 48.45, "G": 209.1, "B": 89.25 },
+      "accessibleLight": { "R": 36, "G": 138, "B": 61 },
+      "accessibleDark": { "R": 68, "G": 219, "B": 91 }
+    },
+
+    {
+      "name": "Indigo",
+      "systemName": "systemIndigo",
+      "description": "An indigo color that automatically adapts to the current trait environment.",
+      "defaultLight": { "R": 88, "G": 86, "B": 214 },
+      "defaultDark": { "R": 94, "G": 92, "B": 230 },
+      "accessibleLight": { "R": 54, "G": 52, "B": 163 },
+      "accessibleDark": { "R": 125, "G": 122, "B": 255 }
+    },
+    {
+      "name": "Mint",
+      "systemName": "systemMint",
+      "description": "A mint color that automatically adapts to the current trait environment.",
+      "defaultLight": { "R": 0, "G": 199, "B": 190 },
+      "defaultDark": { "R": 99, "G": 230, "B": 226 },
+      "accessibleLight": { "R": 12, "G": 209, "B": 123 },
+      "accessibleDark": { "R": 102, "G": 212, "B": 207 }
+    },
+    {
+      "name": "Orange",
+      "systemName": "systemOrange",
+      "description": "An orange color that automatically adapts to the current trait environment.",
+      "defaultLight": { "R": 255, "G": 149, "B": 0 },
+      "defaultDark": { "R": 255, "G": 159, "B": 10 },
+      "accessibleLight": { "R": 201, "G": 52, "B": 0 },
+      "accessibleDark": { "R": 255, "G": 179, "B": 64 }
+    },
+    {
+      "name": "Pink",
+      "systemName": "systemPink",
+      "description": "A pink color that automatically adapts to the current trait environment.",
+      "defaultLight": { "R": 255, "G": 45, "B": 85 },
+      "defaultDark": { "R": 255, "G": 55, "B": 95 },
+      "accessibleLight": { "R": 211, "G": 15, "B": 69 },
+      "accessibleDark": { "R": 255, "G": 100, "B": 130 }
+    },
+
+    {
+      "name": "Purple",
+      "systemName": "systemPurple",
+      "description": "A purple color that automatically adapts to the current trait environment.",
+      "defaultLight": { "R": 175, "G": 82, "B": 222 },
+      "defaultDark": { "R": 191, "G": 90, "B": 242 },
+      "accessibleLight": { "R": 137, "G": 68, "B": 171 },
+      "accessibleDark": { "R": 218, "G": 112, "B": 255 }
+    },
+    {
+      "name": "Red",
+      "systemName": "systemRed",
+      "description": "A red color that automatically adapts to the current trait environment.",
+      "defaultLight": { "R": 255, "G": 59, "B": 48 },
+      "defaultDark": { "R": 255, "G": 69, "B": 58 },
+      "accessibleLight": { "R": 215, "G": 0, "B": 21 },
+      "accessibleDark": { "R": 255, "G": 105, "B": 97 }
+    },
+    {
+      "name": "Teal",
+      "systemName": "systemTeal",
+      "description": "A teal color that automatically adapts to the current trait environment.",
+      "defaultLight": { "R": 48, "G": 176, "B": 199 },
+      "defaultDark": { "R": 64, "G": 200, "B": 224 },
+      "accessibleLight": { "R": 0, "G": 130, "B": 153 },
+      "accessibleDark": { "R": 93, "G": 230, "B": 255 }
+    },
+    {
+      "name": "Yellow",
+      "systemName": "systemYellow",
+      "description": "A yellow color that automatically adapts to the current trait environment.",
+      "defaultLight": { "R": 255, "G": 204, "B": 0 },
+      "defaultDark": { "R": 255, "G": 214, "B": 10 },
+      "accessibleLight": { "R": 178, "G": 80, "B": 0 },
+      "accessibleDark": { "R": 255, "G": 238, "B": 38 }
+    },
+    {
+      "name": "Gray",
+      "systemName": "systemGray",
+      "description": "The standard base gray color that adapts to the environment.",
+      "defaultLight": { "R": 142, "G": 142, "B": 147 },
+      "defaultDark": { "R": 142, "G": 142, "B": 147 },
+      "accessibleLight": { "R": 108, "G": 108, "B": 112 },
+      "accessibleDark": { "R": 174, "G": 174, "B": 178 }
+    },
+    {
+      "name": "Gray 2",
+      "systemName": "systemGray2",
+      "description": "A second-level shade of gray that adapts to the environment.",
+      "defaultLight": { "R": 174, "G": 174, "B": 178 },
+      "defaultDark": { "R": 99, "G": 99, "B": 102 },
+      "accessibleLight": { "R": 142, "G": 142, "B": 147 },
+      "accessibleDark": { "R": 124, "G": 124, "B": 128 }
+    },
+    {
+      "name": "Gray 3",
+      "systemName": "systemGray3",
+      "description": "A third-level shade of gray that adapts to the environment.",
+      "defaultLight": { "R": 199, "G": 199, "B": 204 },
+      "defaultDark": { "R": 72, "G": 72, "B": 74 },
+      "accessibleLight": { "R": 174, "G": 174, "B": 178 },
+      "accessibleDark": { "R": 84, "G": 84, "B": 86 }
+    },
+    {
+      "name": "Gray 4",
+      "systemName": "systemGray4",
+      "description": "A fourth-level shade of gray that adapts to the environment.",
+      "defaultLight": { "R": 209, "G": 209, "B": 214 },
+      "defaultDark": { "R": 58, "G": 58, "B": 60 },
+      "accessibleLight": { "R": 188, "G": 188, "B": 192 },
+      "accessibleDark": { "R": 68, "G": 68, "B": 70 }
+    },
+    {
+      "name": "Gray 5",
+      "systemName": "systemGray5",
+      "description": "A fifth-level shade of gray that adapts to the environment.",
+      "defaultLight": { "R": 229, "G": 229, "B": 234 },
+      "defaultDark": { "R": 44, "G": 44, "B": 46 },
+      "accessibleLight": { "R": 216, "G": 216, "B": 220 },
+      "accessibleDark": { "R": 54, "G": 54, "B": 56 }
+    },
+    {
+      "name": "Gray 6",
+      "systemName": "systemGray6",
+      "description": "A sixth-level shade of gray that adapts to the environment.",
+      "defaultLight": { "R": 242, "G": 242, "B": 247 },
+      "defaultDark": { "R": 28, "G": 28, "B": 30 },
+      "accessibleLight": { "R": 235, "G": 235, "B": 240 },
+      "accessibleDark": { "R": 36, "G": 36, "B": 38 }
+    },
+    {
+      "name": "Label",
+      "systemName": "label",
+      "description": "The color for text labels that contain primary content.",
+      "defaultLight": { "R": 0, "G": 0, "B": 0 },
+      "defaultDark": { "R": 255, "G": 255, "B": 255 }
+    },
+    {
+      "name": "Secondary Label",
+      "systemName": "secondaryLabel",
+      "description": "The color for text labels that contain secondary content.",
+      "defaultLight": { "R": 61.2, "G": 61.2, "B": 66, "A": 0.6 },
+      "defaultDark": { "R": 234.6, "G": 234.6, "B": 244.8, "A": 0.6 }
+    },
+    {
+      "name": "Tertiary Label",
+      "systemName": "tertiaryLabel",
+      "description": "The color for text labels that contain tertiary content.",
+      "defaultLight": { "R": 61.2, "G": 61.2, "B": 66, "A": 0.3 },
+      "defaultDark": { "R": 234.6, "G": 234.6, "B": 244.8, "A": 0.3 }
+    },
+    {
+      "name": "Quaternary Label",
+      "systemName": "quaternaryLabel",
+      "description": "The color for text labels that contain quaternary content.",
+      "defaultLight": { "R": 61.2, "G": 61.2, "B": 66, "A": 0.18 },
+      "defaultDark": { "R": 234.6, "G": 234.6, "B": 244.8, "A": 0.16 }
+    },
+    {
+      "name": "System Fill",
+      "systemName": "systemFill",
+      "description": "An overlay fill color for thin and small shapes.",
+      "defaultLight": { "R": 119.85, "G": 119.85, "B": 127.5, "A": 0.2 },
+      "defaultDark": { "R": 119.85, "G": 119.85, "B": 127.5, "A": 0.36 }
+    },
+    {
+      "name": "Secondary System Fill",
+      "systemName": "secondarySystemFill",
+      "description": "An overlay fill color for medium-size shapes.",
+      "defaultLight": { "R": 119.85, "G": 119.85, "B": 127.5, "A": 0.16 },
+      "defaultDark": { "R": 119.85, "G": 119.85, "B": 127.5, "A": 0.32 }
+    },
+    {
+      "name": "Tertiary System Fill",
+      "systemName": "tertiarySystemFill",
+      "description": "An overlay fill color for large shapes.",
+      "defaultLight": { "R": 117.3, "G": 117.3, "B": 127.5, "A": 0.12 },
+      "defaultDark": { "R": 117.3, "G": 117.3, "B": 127.5, "A": 0.24 }
+    },
+    {
+      "name": "Quaternary System Fill",
+      "systemName": "quaternarySystemFill",
+      "description": "An overlay fill color for large areas that contain complex content.",
+      "defaultLight": { "R": 114.75, "G": 114.75, "B": 127.5, "A": 0.08 },
+      "defaultDark": { "R": 117.3, "G": 117.3, "B": 127.5, "A": 0.18 }
+    },
+    {
+      "name": "Placeholder Text",
+      "systemName": "placeholderText",
+      "description": "The color for placeholder text in controls or text views.",
+      "defaultLight": { "R": 61.2, "G": 61.2, "B": 66, "A": 0.3 },
+      "defaultDark": { "R": 234.6, "G": 234.6, "B": 244.8, "A": 0.3 }
+    },
+    {
+      "name": "System Background",
+      "systemName": "systemBackground",
+      "description": "The color for the main background of your interface. Use this color for standard table views and designs that have a white primary background in a light environment.",
+      "defaultLight": { "R": 255, "G": 255, "B": 255, "A": 1 },
+      "defaultDark": { "R": 0, "G": 0, "B": 0, "A": 1 }
+    },
+    {
+      "name": "Secondary System Background",
+      "systemName": "secondarySystemBackground",
+      "description": "The color for content layered on top of the main background. Use this color for standard table views and designs that have a white primary background in a light environment.",
+      "defaultLight": { "R": 242.25, "G": 242.25, "B": 247.35, "A": 1 },
+      "defaultDark": { "R": 28.05, "G": 28.05, "B": 30.6, "A": 1 }
+    },
+    {
+      "name": "Tertiary System Background",
+      "systemName": "tertiarySystemBackground",
+      "description": "The color for content layered on top of secondary backgrounds. Use this color for standard table views and designs that have a white primary background in a light environment.",
+      "defaultLight": { "R": 255, "G": 255, "B": 255, "A": 1 },
+      "defaultDark": { "R": 43.35, "G": 43.35, "B": 46.35, "A": 1 }
+    },
+    {
+      "name": "System Grouped Background",
+      "systemName": "systemGroupedBackground",
+      "description": "The color for the main background of your grouped interface.",
+      "defaultLight": { "R": 242.25, "G": 242.25, "B": 247.35, "A": 1 },
+      "defaultDark": { "R": 0, "G": 0, "B": 0, "A": 1 }
+    },
+    {
+      "name": "Secondary System Grouped Background",
+      "systemName": "secondarySystemGroupedBackground",
+      "description": "The color for content layered on top of the main background of your grouped interface. Use this color for grouped content, including table views and platter-based designs.",
+      "defaultLight": { "R": 255, "G": 255, "B": 255, "A": 1 },
+      "defaultDark": { "R": 28.05, "G": 28.05, "B": 30.6, "A": 1 }
+    },
+    {
+      "name": "Tertiary System Grouped Background",
+      "systemName": "tertiarySystemGroupedBackground",
+      "description": "The color for content layered on top of secondary backgrounds of your grouped interface.",
+      "defaultLight": { "R": 242.25, "G": 242.25, "B": 247.35, "A": 1 },
+      "defaultDark": { "R": 43.35, "G": 43.35, "B": 46.35, "A": 1 }
+    },
+    {
+      "name": "Separator",
+      "systemName": "separator",
+      "description": "The color for thin borders or divider lines that allows some underlying content to be visible.",
+      "defaultLight": { "R": 61.2, "G": 61.2, "B": 66, "A": 0.29 },
+      "defaultDark": { "R": 84.15, "G": 84.15, "B": 89.25, "A": 0.6 }
+    },
+    {
+      "name": "Opaque Separator",
+      "systemName": "opaqueSeparator",
+      "description": "The color for borders or divider lines that hides any underlying content.",
+      "defaultLight": { "R": 198.9, "G": 198.9, "B": 198.9, "A": 1 },
+      "defaultDark": { "R": 56.1, "G": 56.1, "B": 58.65, "A": 1 }
+    },
+    {
+      "name": "Link",
+      "systemName": "link",
+      "description": "The specified color for links.",
+      "defaultLight": { "R": 0, "G": 122.4, "B": 255, "A": 1 },
+      "defaultDark": { "R": 10.2, "G": 132.6, "B": 255, "A": 1 }
+    },
+    {
+      "name": "Dark Text",
+      "systemName": "darkText",
+      "description": "The nonadaptable system color for text on a light background.",
+      "defaultLight": { "R": 0, "G": 0, "B": 0, "A": 1 },
+      "defaultDark": { "R": 0, "G": 0, "B": 0, "A": 1 }
+    },
+    {
+      "name": "Light Text",
+      "systemName": "lightText",
+      "description": "The nonadaptable system color for text on a dark background.",
+      "defaultLight": { "R": 255, "G": 255, "B": 255, "A": 0.6 },
+      "defaultDark": { "R": 255, "G": 255, "B": 255, "A": 0.6 }
+    }
+  ]
+}
