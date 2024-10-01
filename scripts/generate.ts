@@ -126,10 +126,13 @@ export const ${key} = PlatformColor("${key}");`;
 
   const androidModule =
     `import {PlatformColor} from 'react-native';\n` +
+    `const isExpoGo = typeof expo !== 'undefined' && globalThis.expo?.modules?.ExpoGo; \n` +
     Object.entries(descriptions)
       .map(([key]) => {
         return `${getDescription(key)}
-export const ${key} = PlatformColor("@color/${key}");`;
+export const ${key} = isExpoGo ? ${JSON.stringify(
+          COLORS[key][0]
+        )} : PlatformColor("@color/${key}");`;
       })
       .join("\n");
 

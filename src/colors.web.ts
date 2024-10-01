@@ -20,7 +20,7 @@ export const systemCyan = 'var(--apple-systemCyan)';
 /**
  * A green color that automatically adapts to the current trait environment.
  * @light rgba(52, 199, 89, 1)
- * @dark rgba(48, 209, 88, 1)
+ * @dark rgba(48.45, 209.1, 89.25, 1)
  */ 
 export const systemGreen = 'var(--apple-systemGreen)';
 /**
