@@ -1,4 +1,5 @@
 import {PlatformColor} from 'react-native';
+// @ts-expect-error: internal global
 const isExpoGo = typeof expo !== 'undefined' && globalThis.expo?.modules?.ExpoGo; 
 /**
  * A blue color that automatically adapts to the current trait environment.
