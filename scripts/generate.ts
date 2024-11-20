@@ -27,6 +27,33 @@ const COLORS_P3 = Object.fromEntries(
     ])
 );
 
+function generateCircleSvg(color1: string): string {
+  const radius = 6; // Reduced radius for padding
+  const diameter = radius * 2 + 4; // Add padding (2 units on each side)
+  return `
+    <svg xmlns="http://www.w3.org/2000/svg" width="${diameter}" height="${diameter}" viewBox="0 0 ${diameter} ${diameter}">
+      <defs>
+        <filter id="contrastFilter">
+          <feComponentTransfer>
+            <feFuncR type="table" tableValues="1 0" />
+            <feFuncG type="table" tableValues="1 0" />
+            <feFuncB type="table" tableValues="1 0" />
+          </feComponentTransfer>
+        </filter>
+      </defs>
+      <rect width="${diameter}" height="${diameter}" fill="${color1}" filter="url(#contrastFilter)" opacity="0.1" />
+      <circle cx="${diameter / 2}" cy="${
+    diameter / 2
+  }" r="${radius}" fill="${color1}" />
+    </svg>
+  `;
+}
+// Function to convert the SVG string to a base64 image string
+function svgToBase64(svg: string): string {
+  const base64 = Buffer.from(svg).toString("base64");
+  return `data:image/svg+xml;base64,${base64}`;
+}
+
 const COLORS = Object.fromEntries(
   Spec.colors
     // .sort((a, b) => a.systemName.localeCompare(b.systemName))
@@ -106,15 +133,21 @@ function generateModule() {
     if (key in descriptions) {
       return `/**
  * ${descriptions[key]}
- * @light ${COLORS[key][0]}
- * @dark ${COLORS[key][1]}
+ * @light ${COLORS[key][0]} - ![img](${svgToBase64(
+        generateCircleSvg(COLORS[key][0])
+      )})
+ * @dark ${COLORS[key][1]} - ![img](${svgToBase64(
+        generateCircleSvg(COLORS[key][1])
+      )})
  */ `;
     }
     return "";
   };
 
   const module =
-    `import {PlatformColor} from 'react-native';\n` +
+    `import type { OpaqueColorValue } from "react-native";
+const PlatformColor = (...semantic: string[]) =>
+  ({ semantic } as unknown as OpaqueColorValue);\n` +
     Object.entries(descriptions)
       .map(([key]) => {
         return `${getDescription(key)}
@@ -125,7 +158,9 @@ export const ${key} = PlatformColor("${key}");`;
   fs.writeFileSync(path.join(__dirname, "../src/colors.ts"), module);
 
   const androidModule =
-    `import {PlatformColor} from 'react-native';\n` +
+    `import type { OpaqueColorValue } from "react-native";
+const PlatformColor = (...resource_paths: string[]) =>
+  ({ resource_paths } as unknown as OpaqueColorValue);\n` +
     "// @ts-expect-error: internal global\n" +
     `const isExpoGo = typeof expo !== 'undefined' && globalThis.expo?.modules?.ExpoGo; \n` +
     Object.entries(descriptions)
